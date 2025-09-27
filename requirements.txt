@@ -1,0 +1,39 @@
+numpy>=1.24.0,<2.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.2.0
+pillow>=9.5.0
+
+# TensorFlow (cross-platform CPU/GPU) - uncomment and pick this if you don't need Apple Silicon native builds
+# tensorflow>=2.12.0
+
+# --- Apple Silicon (macOS M1/M2) instructions ---
+# On Apple Silicon (M1/M2) it's recommended to use the native builds:
+# 1) Install the macOS TensorFlow package and the Metal plugin for GPU acceleration:
+#    pip install --upgrade pip
+#    pip install tensorflow-macos
+#    pip install tensorflow-metal
+# 2) Optionally pin versions that are known to work for your setup.
+# Add these two packages to your environment instead of the plain `tensorflow` package.
+
+# If you want to pin the Apple Silicon packages in this file, uncomment the lines below:
+tensorflow-macos
+tensorflow-metal
+
+# Optional but recommended
+tensorflow-addons>=0.21.0
+
+# For progress bars and nicer notebook experience
+tqdm>=4.65.0
+
+# Reproducibility helpers (optional)
+python-dateutil>=2.8.2
+
+# Development / testing (optional)
+ipython
+jupyter
+
+# Notes:
+# - If you plan to use a GPU, install a TensorFlow package compatible with your CUDA/cuDNN.
+# - To install: pip install -r requirements.txt
